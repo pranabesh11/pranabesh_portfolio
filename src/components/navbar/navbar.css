@@ -12,8 +12,7 @@ body {
 }
 
 /* DESKTOP NAV */
-#desktop-nav,
-.nav-links {
+#desktop-nav,.nav-links {
   display: flex;
 }
 
@@ -23,6 +22,11 @@ body {
   height: 17vh;
 }
 
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -30,23 +34,25 @@ body {
 }
 
 a {
-  color: black;
-  text-decoration: none;
-}
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+  }
 
-a:hover {
-  color: grey;
-}
-
-.logo {
-  font-size: 2rem;
-  font-family: cursive;
-  font-weight: bold;
-}
-
-.logo:hover {
-  cursor: default;
-}
+  a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .logo:hover {
+    cursor: default;
+  }
 
 /* HAMBURGER MENU */
 #hamburger-nav {
@@ -89,16 +95,15 @@ a:hover {
 
 /* Default hidden state for menu links */
 .menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-  width: 200px; /* Set a width to the menu for better visibility */
-  /* border: 1px solid #ccc; Optional: Adds a border to the menu */
-}
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+  }
 
 /* When menu is open, reveal the links */
 .menu-links.open {
@@ -106,13 +111,14 @@ a:hover {
 }
 
 .menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-}
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
 
 .menu-links a:hover {
   background-color: #f1f1f1;
@@ -128,13 +134,7 @@ a:hover {
     display: none;
   }
 
-  #hamburger-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    padding-top: 7%; /* Add some padding for better spacing */
-  }
+  
 
   .hamburger-icon {
     margin-left: auto; /* Push the hamburger to the right */
