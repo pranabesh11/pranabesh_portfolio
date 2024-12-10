@@ -5,9 +5,7 @@ import github from '../../assets/github.png';
 import profile from "../../assets/profile-pic.png";
 
 const Hero = () => {
-  const openResume = () => {
-    window.open('./assets/resume-example.pdf');
-  };
+ 
 
   const navigateToContact = () => {
     window.location.href = './#contact';
@@ -23,9 +21,11 @@ const Hero = () => {
         <h1 className="title">John Doe</h1>
         <p className="section__text__p2">Frontend Developer</p>
         <div className="btn-container">
-          <button className="btn btn-color-2" onClick={openResume}>
-            Download CV
-          </button>
+          <a href='./assets/resume-example.pdf' download="resume-example.pdf">
+            <button className="btn btn-color-2">
+              Download CV
+            </button>
+          </a>
           <button className="btn btn-color-1" onClick={navigateToContact}>
             Contact Info
           </button>
@@ -41,7 +41,7 @@ const Hero = () => {
             src={github}
             alt="My Github profile"
             className="icon"
-            onClick={() => window.location.href = 'https://github.com/'}
+            onClick={() => window.open('https://github.com/pranabesh11','_blank').focus()}
           />
         </div>
       </div>
