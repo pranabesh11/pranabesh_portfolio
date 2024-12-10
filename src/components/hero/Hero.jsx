@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
       <div className="section__text">
         <p className="section__text__p1">Hello, I'm</p>
-        <h1 className="title">John Doe</h1>
+        <h1 className="title">Pranabesh Pratihar</h1>
         <p className="section__text__p2">Frontend Developer</p>
         <div className="btn-container">
           <a href='./assets/resume-example.pdf' download="resume-example.pdf">

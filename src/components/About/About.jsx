@@ -3,6 +3,7 @@ import './about.css';
 import about_pic from "../../assets/about-pic.png";
 import experience from "../../assets/experience.png";
 import education from "../../assets/education.png";
+import arrowpic from '../../assets/arrow.png';
 
 const About = () => {
   return (
@@ -26,7 +27,7 @@ const About = () => {
                 className="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>1.2 years <br />Frontend Development</p>
             </div>
             <div className="details-container">
               <img
@@ -51,7 +52,7 @@ const About = () => {
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src={arrowpic}
         alt="Arrow icon"
         className="icon arrow"
         onClick={() => window.location.href = './#experience'}

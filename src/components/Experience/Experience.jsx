@@ -1,6 +1,7 @@
 import React from 'react';
 import './experience.css';
-import checkmark from "../../assets/checkmark.png"
+import checkmark from "../../assets/checkmark.png";
+import arrowpic from '../../assets/arrow.png';
 
 const Experience = () => {
   return (
@@ -136,7 +137,7 @@ const Experience = () => {
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src={arrowpic}
         alt="Arrow icon"
         className="icon arrow"
         onClick={() => window.location.href = './#projects'}

@@ -3,7 +3,7 @@ import './projects.css';
 import project1 from "../../assets/project-1.png";
 import project2 from "../../assets/project-2.png";
 import project3 from "../../assets/project-3.png";
-
+import arrowpic from '../../assets/arrow.png';
 
 const Projects = () => {
   return (
@@ -93,7 +93,7 @@ const Projects = () => {
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src={arrowpic}
         alt="Arrow icon"
         className="icon arrow"
         onClick={() => window.location.href='./#contact'}
