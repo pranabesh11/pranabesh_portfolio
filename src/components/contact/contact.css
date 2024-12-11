@@ -1,5 +1,7 @@
 /* CONTACT */
-
+  *{
+    border: 1px solid red;
+  }
   #contact {
     display: flex;
     justify-content: center;
