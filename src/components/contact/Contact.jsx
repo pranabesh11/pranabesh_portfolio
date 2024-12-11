@@ -68,7 +68,7 @@ const Contact = () => {
             alt="Email icon"
             className="icon contact-icon email-icon"
           />
-          <p >
+          <p>
             <a href="mailto:pranabeshpratiharjgm@gmail.com">pranabeshpratiharjgm@gmail.com</a>
           </p>
         </div>
