@@ -147,19 +147,21 @@
     .text-container {
       text-align: justify;
     }
+    
     #email_form{
       height: 45vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-top: 5vh;
+      margin-bottom: 10vh;
     }
     .form_div{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      width: 70vw;
     }
     .form_div input {
       height: 30px;
