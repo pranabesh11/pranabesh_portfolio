@@ -36,17 +36,12 @@ const About = () => {
                 className="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>B.Sc. Physics<br />M.Sc. Electronics <br/> Self Taught Programmar</p>
             </div>
           </div>
           <div className="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I’m a web developer with 1.2 years of experience in building responsive, user-friendly web applications. Skilled in front-end and back-end technologies like React, JavaScript, HTML, CSS, and Node.js, I strive to create efficient and seamless digital experiences. I’m passionate about problem-solving and always eager to learn new tools and techniques to improve my craft. I enjoy collaborating on projects and constantly seek to grow in the ever-evolving world of web development.
             </p>
           </div>
         </div>

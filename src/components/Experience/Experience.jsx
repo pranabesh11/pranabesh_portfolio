@@ -2,6 +2,8 @@ import React from 'react';
 import './experience.css';
 import checkmark from "../../assets/checkmark.png";
 import arrowpic from '../../assets/arrow.png';
+import html_img from "../../assets/skills_Icons/html.png"
+import css_img from "../../assets/skills_Icons/css-3.png"
 
 const Experience = () => {
   return (
@@ -16,7 +18,7 @@ const Experience = () => {
             <div className="article-container">
               <article>
                 <img
-                  src={checkmark}
+                  src={html_img}
                   alt="Experience icon"
                   className="icon"
                 />
@@ -27,7 +29,7 @@ const Experience = () => {
               </article>
               <article>
                 <img
-                  src={checkmark}
+                  src={css_img}
                   alt="Experience icon"
                   className="icon"
                 />
