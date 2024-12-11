@@ -1,7 +1,5 @@
 /* CONTACT */
-  *{
-    border: 1px solid red;
-  }
+
   #contact {
     display: flex;
     justify-content: center;
@@ -118,7 +116,6 @@
       margin: 0;
     }
     .contact-info-container p a{
-      color: green;
       font-size: 13px;
     }
     .contact-info-container p,
