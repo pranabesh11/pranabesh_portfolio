@@ -53,7 +53,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} name='Pranabesh Portfolio Form'>
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>
