@@ -10,6 +10,16 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const form = useRef();
+  const email_id = "pranabeshpratiharjgm@gmail.com";
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(email_id)
+      .then(() => {
+        alert('Email copied to clipboard!');
+      })
+      .catch(err => {
+        alert('Failed to copy text: ' + err);
+      });
+  };
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -52,19 +62,19 @@ const Contact = () => {
       <div className="contact-info-upper-container">
         
         {/* Email Section */}
-        <div className="contact-info-container">
+        <div className="contact-info-container" onClick={copyToClipboard}>
           <img
             src={email}
             alt="Email icon"
             className="icon contact-icon email-icon"
           />
-          <p>
-            <a href="mailto:examplemail@gmail.com">Example@gmail.com</a>
+          <p >
+            <a href="mailto:pranabeshpratiharjgm@gmail.com">pranabeshpratiharjgm@gmail.com</a>
           </p>
         </div>
         
         {/* LinkedIn Section */}
-        <div className="contact-info-container">
+        {/* <div className="contact-info-container">
           <img
             src={linkedin}
             alt="LinkedIn icon"
@@ -73,16 +83,20 @@ const Contact = () => {
           <p>
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </p>
-        </div>
+        </div> */}
       </div>
-      <form ref={form} onSubmit={sendEmail} name='Pranabesh Portfolio Form'>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
+      <form ref={form} onSubmit={sendEmail} name='Pranabesh Portfolio Form' id='email_form'>
+        <div className='form_div'>
+          <label>Name</label>
+          <input type="text" name="user_name" placeholder='Enter Your Name ...'/>      
+          <label>Email</label>
+          <input type="email" name="user_email"  placeholder='Enter Your Email ...'/>      
+          <label>Message</label>
+          <textarea name="message" placeholder='Leave Your Valuable Message ...'/>
+        </div>
+        <div className='btn'>
+          <input type="submit" value="Send" class="button-91"/>
+        </div>
       </form>
     </section>
   );

@@ -107,7 +107,12 @@ a {
 
 /* When menu is open, reveal the links */
 .menu-links.open {
-  max-height: 300px;
+    max-height: 300px;
+    text-align: center;
+    border: 2px solid grey;
+    width: 70vw;
+    margin-top: 22px;
+    border-radius: 10px;
 }
 
 .menu-links a {
@@ -222,7 +227,7 @@ a {
       font-size: 1.25rem;
     }
     .logo {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     .nav-links {
       flex-direction: column;
