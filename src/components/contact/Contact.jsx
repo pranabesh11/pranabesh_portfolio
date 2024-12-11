@@ -4,6 +4,9 @@ import email from "../../assets/email.png";
 import linkedin from "../../assets/linkedin.png";
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
   const form = useRef();
@@ -17,9 +20,28 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          toast.success('Email sent successfully!', {
+            position: "top-center",
+            autoClose: 5000,
+            theme: "colored",
+            style: {
+              backgroundColor: '#28a745',
+              color: 'white'
+            }
+          });
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
+          toast.error('Send email again. Something went wrong.', {
+            position: "top-center",
+            autoClose: 5000,
+            theme: "colored",
+            style: {
+              backgroundColor: '#dc3545',
+              color: 'white'
+            }
+          });
         },
       );
   };
