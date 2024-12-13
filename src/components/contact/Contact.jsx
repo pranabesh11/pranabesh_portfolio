@@ -6,6 +6,8 @@ import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import whatsapp from '../../assets/whatsapp.png';
+import phone from '../../assets/phone.png';
 
 
 const Contact = () => {
@@ -87,17 +89,25 @@ const Contact = () => {
       </div>
       <form ref={form} onSubmit={sendEmail} name='Pranabesh Portfolio Form' id='email_form'>
         <div className='form_div'>
-          <label>Name</label>
+          <label>Name :~</label>
           <input type="text" name="user_name" placeholder='Enter Your Name ...'/>      
-          <label>Email</label>
+          <label>Email :~</label>
           <input type="email" name="user_email"  placeholder='Enter Your Email ...'/>      
-          <label>Message</label>
+          <label>Message :~</label>
           <textarea name="message" placeholder='Leave Your Valuable Message ...'/>
         </div>
         <div className='btn'>
-          <input type="submit" value="Send" class="button-91"/>
+          <input type="submit" value="Send" className="button-91"/>
         </div>
       </form>
+      <div className='contact_src'>
+        <a href="https://wa.me/916295945754">
+          <img className='whatsapp' src={whatsapp} alt="WhatsApp icon" />
+        </a>
+        <a href='tel:+916295945754'>
+          <img className='phone' src={phone} alt="phone icon"/>
+        </a>
+      </div>
     </section>
   );
 };

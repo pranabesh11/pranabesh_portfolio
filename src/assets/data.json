@@ -1,0 +1,79 @@
+{
+    "Frontend Development":[
+        {
+            "image_link":"../../assets/skills_Icons/html.png",
+            "Name":"HTML",
+            "Status":"Advanced"
+        },
+        {   
+            "image_link":"https://www.github.com",
+            "Name":"CSS",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"https://www.github.com",
+            "Name":"HTML",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"https://www.github.com",
+            "Name":"HTML",
+            "Status":"Advanced"
+        }
+    ],
+    "Backend Development":[
+        {
+            "image_link":"https://www.github.com",
+            "Name":"HTML",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"https://www.github.com",
+            "Name":"HTML",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"https://www.github.com",
+            "Name":"HTML",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"https://www.github.com",
+            "Name":"HTML",
+            "Status":"Advanced"
+        }
+    ],
+    "Projects":[
+        {   
+            "image_link":"https://www.github.com",
+            "Name":"Project One",
+            "Github Link":"https://www.github.com",
+            "Demo Link":"https://www.github.com"
+        },
+        {   
+            "image_link":"https://www.github.com",
+            "Name":"Project One",
+            "Github Link":"https://www.github.com",
+            "Demo Link":"https://www.github.com"
+        },
+        {   
+            "image_link":"https://www.github.com",
+            "Name":"Project One",
+            "Github Link":"https://www.github.com",
+            "Demo Link":"https://www.github.com"
+        },
+        {   
+            "image_link":"https://www.github.com",
+            "Name":"Project One",
+            "Github Link":"https://www.github.com",
+            "Demo Link":"https://www.github.com"
+        },
+        {   
+            "image_link":"https://www.github.com",
+            "Name":"Project One",
+            "Github Link":"https://www.github.com",
+            "Demo Link":"https://www.github.com"
+        }
+    ]
+
+}

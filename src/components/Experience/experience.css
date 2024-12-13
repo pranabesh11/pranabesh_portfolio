@@ -116,6 +116,7 @@
   }
   
   @media screen and (max-width: 600px) {
+    
     #contact,
     footer {
       height: 40vh;
@@ -126,6 +127,14 @@
     }
     article {
       font-size: 1rem;
+      width: 110px;
+      border: 1px solid red;
+    }
+    article h3{
+      font-size: 1rem;
+    }
+    article p{
+      font-size: 0.8rem;
     }
     footer nav {
       height: fit-content;

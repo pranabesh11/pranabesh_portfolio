@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './experience.css';
 import checkmark from "../../assets/checkmark.png";
 import arrowpic from '../../assets/arrow.png';
 import html_img from "../../assets/skills_Icons/html.png"
-import css_img from "../../assets/skills_Icons/css-3.png"
+import css_img from "../../assets/skills_Icons/css-3.png";
+import data from "../../assets/data.json";
 
 const Experience = () => {
+  const IMG_ARR = [html_img,css_img,html_img ,css_img];
+  useEffect(()=>{
+    console.log("front end data",data['Frontend Development'][0]);
+  },[]);
   return (
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
@@ -16,6 +21,24 @@ const Experience = () => {
           <div className="details-container">
             <h2 className="experience-sub-title">Frontend Development</h2>
             <div className="article-container">
+              {
+                data['Frontend Development'].map((skill,index)=>{
+                  return(
+                    <article key={index}>
+                      <img
+                        src={IMG_ARR[index]}
+                        alt="Experience icon"
+                        className="icon"
+                      />
+                      <div>
+                        <h3>{skill.Name}</h3>
+                        <p>{skill.Status}</p>
+                      </div>
+                    </article>
+                  );
+                })
+              }
+            
               <article>
                 <img
                   src={html_img}

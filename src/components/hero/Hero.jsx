@@ -21,7 +21,7 @@ const Hero = () => {
         <h1 className="title">Pranabesh Pratihar</h1>
         <p className="section__text__p2">Frontend Developer</p>
         <div className="btn-container">
-          <a href='./assets/resume-example.pdf' download="resume-example.pdf">
+          <a href='./assets/PRANABESH PRATIHAR_RESUME.pdf' download="PRANABESH PRATIHAR_RESUME.pdf">
             <button className="btn btn-color-2">
               Download CV
             </button>
