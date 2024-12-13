@@ -54,6 +54,7 @@
     margin: 10px;
     cursor: pointer;
     background-color: white;
+    border-radius: 5px;
   }
   
   #email_form{
