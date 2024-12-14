@@ -7,10 +7,13 @@ import css_img from "../../assets/skills_Icons/css-3.png";
 import data from "../../assets/data.json";
 
 const Experience = () => {
-  const IMG_ARR = [html_img,css_img,html_img ,css_img];
   useEffect(()=>{
     console.log("front end data",data['Frontend Development'][0]);
   },[]);
+  
+  function getImagePath(path){
+    return new URL(`../../assets/skills_Icons/${path}`, import.meta.url).href;
+  }
   return (
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
@@ -19,14 +22,14 @@ const Experience = () => {
         <div className="about-containers">
           {/* Frontend Development Experience */}
           <div className="details-container">
-            <h2 className="experience-sub-title">Frontend Development</h2>
+            <h2 className="experience-sub-title">Programming Languages</h2>
             <div className="article-container">
               {
                 data['Frontend Development'].map((skill,index)=>{
                   return(
                     <article key={index}>
                       <img
-                        src={IMG_ARR[index]}
+                        src={getImagePath(skill.image_link)}
                         alt="Experience icon"
                         className="icon"
                       />
@@ -38,127 +41,127 @@ const Experience = () => {
                   );
                 })
               }
-            
-              <article>
-                <img
-                  src={html_img}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={css_img}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={checkmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={checkmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={checkmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={checkmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
             </div>
           </div>
 
-          {/* Backend Development Experience */}
+          {/* Library Development Experience */}
           <div className="details-container">
-            <h2 className="experience-sub-title">Backend Development</h2>
+            <h2 className="experience-sub-title">Popular Libraries......</h2>
             <div className="article-container">
-              <article>
-                <img
-                  src={checkmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={checkmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={checkmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={checkmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+              {
+                data['Libraries'].map((skill,index)=>{
+                  return(
+                    <article key={index}>
+                      <img
+                        src={getImagePath(skill.image_link)}
+                        alt="Experience icon"
+                        className="icon"
+                      />
+                      <div>
+                        <h3>{skill.Name}</h3>
+                        <p>{skill.Status}</p>
+                      </div>
+                    </article>
+                  );
+                })
+              }
             </div>
           </div>
-          
+
+          {/* Database Experience */}
+          <div className="details-container">
+            <h2 className="experience-sub-title">Most Popular Database.............. </h2>
+            <div className="article-container">
+              {
+                data['Database'].map((skill,index)=>{
+                  return(
+                    <article key={index}>
+                      <img
+                        src={getImagePath(skill.image_link)}
+                        alt="Experience icon"
+                        className="icon"
+                      />
+                      <div>
+                        <h3>{skill.Name}</h3>
+                        <p>{skill.Status}</p>
+                      </div>
+                    </article>
+                  );
+                })
+              }
+            </div>
+          </div>
+
+          {/* Mobile Experience */}
+          <div className="details-container">
+            <h2 className="experience-sub-title">Programming Languages</h2>
+            <div className="article-container">
+              {
+                data['Mobile'].map((skill,index)=>{
+                  return(
+                    <article key={index}>
+                      <img
+                        src={getImagePath(skill.image_link)}
+                        alt="Experience icon"
+                        className="icon"
+                      />
+                      <div>
+                        <h3>{skill.Name}</h3>
+                        <p>{skill.Status}</p>
+                      </div>
+                    </article>
+                  );
+                })
+              }
+            </div>
+          </div>
+          {/* Frontend Development Experience */}
+          <div className="details-container">
+            <h2 className="experience-sub-title">Programming Languages</h2>
+            <div className="article-container">
+              {
+                data['tools'].map((skill,index)=>{
+                  return(
+                    <article key={index}>
+                      <img
+                        src={getImagePath(skill.image_link)}
+                        alt="Experience icon"
+                        className="icon"
+                      />
+                      <div>
+                        <h3>{skill.Name}</h3>
+                        <p>{skill.Status}</p>
+                      </div>
+                    </article>
+                  );
+                })
+              }
+            </div>
+          </div>
+
+          {/* Framework Experience */}
+          <div className="details-container">
+            <h2 className="experience-sub-title">Frameworks</h2>
+            <div className="article-container">
+              {
+                data['Frameworks'].map((skill,index)=>{
+                  return(
+                    <article key={index}>
+                      <img
+                        src={getImagePath(skill.image_link)}
+                        alt="Experience icon"
+                        className="icon"
+                      />
+                      <div>
+                        <h3>{skill.Name}</h3>
+                        <p>{skill.Status}</p>
+                      </div>
+                    </article>
+                  );
+                })
+              }
+            </div>
+          </div>          
         </div>
       </div>
       <img

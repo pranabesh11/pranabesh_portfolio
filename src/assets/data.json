@@ -1,45 +1,164 @@
 {
     "Frontend Development":[
         {
-            "image_link":"../../assets/skills_Icons/html.png",
+            "image_link":"html.png",
             "Name":"HTML",
             "Status":"Advanced"
         },
         {   
-            "image_link":"https://www.github.com",
+            "image_link":"css-3.png",
             "Name":"CSS",
             "Status":"Advanced"
         },
         {
-            "image_link":"https://www.github.com",
-            "Name":"HTML",
+            "image_link":"java.png",
+            "Name":"JAVA",
             "Status":"Advanced"
         },
         {
-            "image_link":"https://www.github.com",
-            "Name":"HTML",
+            "image_link":"js.png",
+            "Name":"JAVASCRIPT",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"ruby.png",
+            "Name":"RUBY",
+            "Status":"Intermediate"
+        },
+        {
+            "image_link":"python.png",
+            "Name":"PYTHON",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"sql-server.png",
+            "Name":"SQL",
+            "Status":"Intermediate"
+        },
+        {
+            "image_link":"typescript.png",
+            "Name":"TYPESCRIPT",
+            "Status":"Intermediate"
+        }
+        
+    ],
+    "Frameworks":[
+        {
+            "image_link":"node-js.png",
+            "Name":"NODE JS",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"bootstrap.png",
+            "Name":"BOOTSTRAP",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"tailwind.png",
+            "Name":"TAILWIND",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"rails.jpeg",
+            "Name":"RAILS",
             "Status":"Advanced"
         }
     ],
-    "Backend Development":[
+    "Libraries":[
         {
-            "image_link":"https://www.github.com",
-            "Name":"HTML",
+            "image_link":"atom.png",
+            "Name":"REACT JS",
             "Status":"Advanced"
         },
         {
-            "image_link":"https://www.github.com",
-            "Name":"HTML",
+            "image_link":"redux.png",
+            "Name":"REDUX",
             "Status":"Advanced"
         },
         {
-            "image_link":"https://www.github.com",
-            "Name":"HTML",
+            "image_link":"expressjs.png",
+            "Name":"TAILWIND",
             "Status":"Advanced"
         },
         {
-            "image_link":"https://www.github.com",
-            "Name":"HTML",
+            "image_link":"mongoose.png",
+            "Name":"MONGOOSE",
+            "Status":"Advanced"
+        }
+    ],
+    "Database":[
+        {
+            "image_link":"firebase.png",
+            "Name":"FIREBASE",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"sqlite.jpeg",
+            "Name":"SQLITE",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"mongodb.png",
+            "Name":"MONGODB",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"postgre.png",
+            "Name":"POSTGRES",
+            "Status":"Advanced"
+        }
+    ],
+    "Mobile":[
+        {
+            "image_link":"reactnative.png",
+            "Name":"REACT NATIVE",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"reactnavigation.png",
+            "Name":"NAVIGATION",
+            "Status":"Advanced"
+        }
+    ],
+    "tools":[
+        {
+            "image_link":"chatgpt.png",
+            "Name":"CHATGPT",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"langchain.jpeg",
+            "Name":"LANGCHAIN",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"postman.png",
+            "Name":"POSTMAN",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"git.png",
+            "Name":"GIT",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"linux.png",
+            "Name":"LINUX",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"xd.png",
+            "Name":"ADOBE XD",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"vscode.jpeg",
+            "Name":"VS CODE",
+            "Status":"Advanced"
+        },
+        {
+            "image_link":"canva.png",
+            "Name":"CANVA",
             "Status":"Advanced"
         }
     ],
